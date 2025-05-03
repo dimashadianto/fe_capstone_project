@@ -9,6 +9,7 @@ import { RegisterReq } from "@/models/user_model";
 import { Link, useNavigate } from "react-router-dom";
 import { ErrorToast, SuccessToast } from "../toast";
 import Footer from "../footer";
+import { PasswordInput } from "../password-input";
 
 const Register = () => {
     const navigate = useNavigate();
@@ -107,8 +108,7 @@ const Register = () => {
                                     <FormLabel>Kata Sandi</FormLabel>
                                     <FormMessage className="-mt-1" />
                                     <FormControl>
-                                        <Input
-                                            type="password"
+                                        <PasswordInput
                                             placeholder="Kata Sandi"
                                             autoComplete="off"
                                             {...field}
@@ -125,9 +125,8 @@ const Register = () => {
                                     <FormLabel>Konfirmasi Kata Sandi</FormLabel>
                                     <FormMessage className="-mt-1" />
                                     <FormControl>
-                                        <Input
-                                            type="password"
-                                            placeholder="Kata Sandi"
+                                        <PasswordInput
+                                            placeholder="Konfirmasi Kata Sandi"
                                             autoComplete="off"
                                             {...field}
                                         />

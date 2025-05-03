@@ -9,6 +9,7 @@ import { LoginFormSchema, loginSchema } from "@/validations/user/login";
 import { LoginReq } from "@/models/user_model";
 import { login } from "@/services/user_service";
 import Footer from "../footer";
+import { PasswordInput } from "../password-input";
 
 const Login = () => {
     const navigate = useNavigate();
@@ -69,8 +70,7 @@ const Login = () => {
                                     <FormLabel>Kata Sandi</FormLabel>
                                     <FormMessage className="-mt-1" />
                                     <FormControl>
-                                        <Input
-                                            type="password"
+                                        <PasswordInput
                                             placeholder="Kata Sandi"
                                             autoComplete="off"
                                             {...field}
