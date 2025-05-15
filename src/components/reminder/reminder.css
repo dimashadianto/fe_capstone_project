@@ -1,0 +1,190 @@
+/* CARD DI HALAMAN UTAMA */
+.reminder-card {
+  background-color: #e0e7ff;
+  border-radius: 20px;
+  padding: 16px;
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+.reminder-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.reminder-image {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.reminder-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.reminder-page {
+  min-height: 100vh;
+  background: linear-gradient(to right, white, #dbeafe, #93c5fd);
+  padding: 40px;
+}
+.reminder-title-main {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.reminder-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+/* HALAMAN DETAIL */
+.reminder-detail-page {
+  padding: 2rem;
+  text-align: center;
+  background: #eef3fd;
+  min-height: 100vh;
+}
+.title {
+  font-size: 28px;
+  margin-bottom: 1.5rem;
+}
+.reminder-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.reminder-item {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.reminder-time {
+  font-size: 20px;
+  font-weight: bold;
+}
+.reminder-message {
+  flex: 1;
+  margin-left: 1rem;
+  color: #555;
+}
+.edit-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  color: #3b82f6;
+}
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: red;
+}
+.add-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 30px;
+  border: none;
+  background: #a3c8ff;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* POPUP FORM */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+}
+.popup-input-time,
+.popup-input-msg {
+  width: 100%;
+  margin: 0.5rem 0 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.save-popup-btn {
+  background: #5aafff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* FORM INPUT (UNTUK HALAMAN DETAIL) */
+.reminder-detail-container {
+  width: 90%;
+  max-width: 340px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 20px;
+  background-color: #fefefe;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: sans-serif;
+}
+.reminder-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 24px;
+}
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 12px;
+  font-size: 16px;
+}
+.save-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #5c67f2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.save-btn:hover {
+  background-color: #4b53d3;
+}

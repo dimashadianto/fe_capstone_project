@@ -1,4 +1,5 @@
 import React from 'react';
+import './reminder.css'; // tambahkan file CSS
 
 interface ReminderCardProps {
   title: string;
@@ -8,16 +9,9 @@ interface ReminderCardProps {
 
 const ReminderCard: React.FC<ReminderCardProps> = ({ title, imageSrc, onClick }) => {
   return (
-    <div
-      className="bg-blue-100 rounded-2xl p-4 cursor-pointer w-[250px] text-center hover:shadow-lg transition"
-      onClick={onClick}
-    >
-      <img
-        src={imageSrc}
-        alt={title}
-        className="w-full h-[170px] object-cover rounded-xl mb-4"
-      />
-      <h2 className="text-lg font-semibold">{title}</h2>
+    <div className="reminder-card" onClick={onClick}>
+      <img src={imageSrc} alt={title} className="reminder-image" />
+      <h2 className="reminder-title">{title}</h2>
     </div>
   );
 };
