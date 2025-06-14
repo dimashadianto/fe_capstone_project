@@ -47,23 +47,23 @@ const ArticlePage = () => {
   return (
     <>
       <Navbar />
-      <div className="p-4">
+      <div className="p-4 bg-gradient-to-r from-white to-blue-200">
         <h1 className="text-2xl font-bold mb-4">Daftar Artikel</h1>
 
         {/* 🔍 Search & Dropdown */}
-        <div className="flex flex-col md:flex-row gap-4 mb-6">
+        <div className="flex flex-col md:flex-row gap-4 mb-6 ">
           <input
             type="text"
             placeholder="Cari berdasarkan judul..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="px-4 py-2 border rounded w-full md:w-1/2"
+            className="px-4 py-2 border rounded w-full md:w-1/2 bg-white"
           />
 
           <select
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
-            className="px-4 py-2 border rounded w-full md:w-1/3"
+            className="px-4 py-2 border rounded w-full md:w-1/3 bg-white"
             title="Pilih kategori artikel"  
           >
             <option value="Semua">Semua Kategori</option>
@@ -77,7 +77,7 @@ const ArticlePage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {filteredArticles.map((article) => (
-            <div key={article.id} className="border rounded-lg p-4 shadow">
+            <div key={article.id} className="border rounded-lg p-4 shadow bg-white">
               <img
                 src={article.image_url}
                 alt={article.title}
