@@ -9,6 +9,7 @@ import WorkoutExercisesPage from "./pages/workout/WorkoutExercisesPage";
 import ArticlePage from './pages/article'
 // @ts-ignore
 import ArticleDetail from './pages/article/ArticleDetail';
+import BMICalorieCalculator from './pages/calculator/bmiCalorieCalculator';
 
 function AppRoutes() {
   return (
@@ -22,6 +23,7 @@ function AppRoutes() {
       <Route path="/workout-categories" element={<WorkoutCategoriesPage />} />
       <Route path="/workout-plans/:id" element={<WorkoutPlansPage />} />
       <Route path="/workout-exercises/:id" element={<WorkoutExercisesPage />} />
+      <Route path="/calculator" element={<BMICalorieCalculator />} />
     </Routes>
   );
 }
