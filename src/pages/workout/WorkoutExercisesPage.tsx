@@ -34,7 +34,7 @@ export default function WorkoutExercisesPage() {
   if (loading) return <div>Loading...</div>;
 
   return (
-    <div className="bg-gradient-to-r from-white to-blue-100">
+    <div className="bg-gradient-to-r from-white to-blue-200">
       <div className="p-6 max-w-5xl mx-auto ">
         <h2 className="text-4xl font-extrabold text-center mb-2">
           {workoutPlan.name}

@@ -28,7 +28,7 @@ export default function WorkoutCategoriesPage() {
   if (loading) return <div>Loading...</div>;
 
   return (
-    <div className="min-h-screen py-10 bg-gradient-to-r from-white to-blue-100">
+    <div className="min-h-screen py-10 bg-gradient-to-r from-white to-blue-200">
       <main className="text-center mt-12">
         <h2 className="text-3xl font-bold mb-8">Choose your Workout Plan</h2>
         <div className="flex justify-center gap-12 px-4 flex-wrap">
