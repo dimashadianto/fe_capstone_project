@@ -28,6 +28,7 @@ export const getReminders = async () => {
 
 // POST buat reminder baru
 export const createReminder = async (data: Reminder) => {
+  console.log(data)
   const response = await api.post('/remind', data);
   return response.data;
 };
@@ -42,4 +43,4 @@ export const updateReminder = async (id: number, data: { message: string; time: 
 export const deleteReminder = async (id: number) => {
   const response = await api.delete(`/delete?id=${id}`);
   return response.data;
-}
+};

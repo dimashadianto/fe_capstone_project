@@ -7,6 +7,10 @@ import WorkoutCategoriesPage from "./pages/workout/WorkoutCategoriesPage";
 import WorkoutPlansPage from "./pages/workout/WorkoutPlansPage";
 import WorkoutExercisesPage from "./pages/workout/WorkoutExercisesPage";
 import ArticlePage from './pages/article'
+import SleepReminder from './components/reminder/sleep';
+import EatReminder from './components/reminder/eat';
+import DrinkReminder from './components/reminder/drink';
+import ReminderPage from "./components/reminder/page";
 // @ts-ignore
 import ArticleDetail from './pages/article/ArticleDetail';
 import BMICalorieCalculator from './pages/calculator/bmiCalorieCalculator';
@@ -24,6 +28,10 @@ function AppRoutes() {
       <Route path="/workout-plans/:id" element={<WorkoutPlansPage />} />
       <Route path="/workout-exercises/:id" element={<WorkoutExercisesPage />} />
       <Route path="/calculator" element={<BMICalorieCalculator />} />
+      <Route path="/reminder" element={<ReminderPage />} />
+      <Route path="/reminder/sleep" element={<SleepReminder />} />
+      <Route path="/reminder/eat" element={<EatReminder />} />
+      <Route path="/reminder/drink" element={<DrinkReminder />} />
     </Routes>
   );
 }
