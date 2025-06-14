@@ -182,7 +182,16 @@ export default function BMICalorieCalculator() {
                 <div className="bg-blue-100 p-6 rounded-2xl shadow max-w-md">
                   <p className="font-semibold mb-2"><strong>Basal Metabolic Rate (BMR):</strong> {bmrResult}</p>
                   <p className="text-sm text-gray-700 mt-2">
-                    BMR adalah jumlah kalori minimal yang diperlukan tubuh untuk mempertahankan fungsi vital (bernapas, sirkulasi darah, dll.) dalam keadaan istirahat total.
+                    BMR adalah jumlah kalori minimal yang diperlukan tubuh untuk mempertahankan fungsi vital (bernapas, sirkulasi darah, dll.) dalam keadaan istirahat total
+                  </p>
+                  <p className="text-sm text-gray-700 mt-2">
+                    Mifflin-St Jeor Equation
+                  </p>
+                  <p className="text-sm text-gray-700 mt-2">
+                    Male: BMR = 10W + 6.25H - 5A + 5
+                  </p>
+                  <p className="text-sm text-gray-700 mt-2">
+                    Female: BMR = 10W + 6.25H - 5A - 161
                   </p>
                 </div>
               )}
