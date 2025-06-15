@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 
 export default function BMICalorieCalculator() {
   const [tab, setTab] = useState<"bmi" | "calorie">("bmi");
@@ -199,7 +198,6 @@ export default function BMICalorieCalculator() {
           )}
         </div>
       </main>
-      <Footer />
     </>
   );
 }
