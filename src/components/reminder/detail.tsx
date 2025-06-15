@@ -22,7 +22,9 @@ const ReminderDetailPage: React.FC<{ type: string }> = ({ type }) => {
   const [editIndex, setEditIndex] = useState<number | null>(null);
   const [showStopPopup, setShowStopPopup] = useState(false);
 
-  const user_id = 2; // sementara hardcoded, bisa diganti dari context nanti
+  const userString = localStorage.getItem('user');
+  const user = userString ? JSON.parse(userString) : null;
+  const user_id = user?.id;
 
   useEffect(() => {
     fetchData();
@@ -185,7 +187,7 @@ const ReminderDetailPage: React.FC<{ type: string }> = ({ type }) => {
         <div className="popup-overlay">
           <div className="popup-box">
             <p>Pengingat sudah berbunyi. Waktunya mengerjakan pesan Anda!</p>
-            <button onClick={stopSound}>Tekan untuk matikan suara</button>
+            <button onClick={stopSound} className='cursor-pointer text-blue-600 hover:text-blue-400'>Tekan untuk matikan suara</button>
           </div>
         </div>
       )}

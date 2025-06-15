@@ -61,7 +61,7 @@ export default function BMICalorieCalculator() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-gradient-to-r from-blue-50 to-blue-100">
+      <main className="min-h-screen bg-gradient-to-r from-white to-blue-200">
         <div className="container mx-auto px-4 py-10">
           {/* Tabs */}
           <div className="flex justify-center gap-4 mb-6">

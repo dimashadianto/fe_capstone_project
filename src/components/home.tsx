@@ -8,6 +8,7 @@ export interface Article {
   content: string;
   image_url: string;
   category_name: string;
+  published_date: string;
 }
 
 const Home = () => {
@@ -23,9 +24,17 @@ const Home = () => {
         const data: Article[] = json.articles;
 
         setArticles(data);
-        const imageUrls = data
-          .filter((item) => item.image_url)
-          .map((item) => item.image_url);
+
+        const latestWithImages = data
+          .filter((item) => item.image_url && item.published_date)
+          .sort(
+            (a, b) =>
+              new Date(b.published_date).getTime() -
+              new Date(a.published_date).getTime()
+          )
+          .slice(0, 5);
+
+        const imageUrls = latestWithImages.map((item) => item.image_url);
         setImages(imageUrls);
       } catch (err) {
         console.error("Gagal mengambil data:", err);

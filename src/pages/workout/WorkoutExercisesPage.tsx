@@ -2,7 +2,6 @@ import { WorkoutExercise, WorkoutPlan } from "@/models/workout_model";
 import { getWorkoutExercises } from "@/services/workout_service";
 import { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
-import exampleImage from "../../assets/example_image.png";
 
 export default function WorkoutExercisesPage() {
   const { id } = useParams<{ id: string }>();
@@ -50,8 +49,7 @@ export default function WorkoutExercisesPage() {
               className="bg-white rounded-2xl shadow-lg p-6 grid md:grid-cols-3 gap-6 items-start"
             >
               <img
-                src={exampleImage}
-                // src={exercise.image_url}
+                src={exercise.image_url}
                 alt={exercise.name}
                 className="rounded-xl w-full h-52 object-cover md:col-span-1"
               />

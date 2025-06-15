@@ -1,5 +1,4 @@
 import { Card, CardContent } from "../ui/card";
-import exampleImage from "../../assets/example_image.png";
 
 interface WorkoutCardProps {
   text: string;
@@ -19,8 +18,7 @@ export default function WorkoutCard({
     >
       <CardContent className="p-4 flex flex-col items-center">
         <img
-          // src={imageUrl}
-          src={exampleImage}
+          src={imageUrl}
           alt={imageUrl}
           className="w-full h-48 object-cover rounded"
         />
